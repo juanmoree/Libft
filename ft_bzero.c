@@ -1,37 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jumoreno <jumoreno@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/07 19:21:58 by jumoreno          #+#    #+#             */
-/*   Updated: 2022/10/08 18:12:59 by jumoreno         ###   ########.fr       */
+/*   Created: 2022/10/08 17:22:48 by jumoreno          #+#    #+#             */
+/*   Updated: 2022/10/08 18:11:58 by jumoreno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include<stdio.h>
-#include<string.h>
 
-void *ft_memset(void *b, int c, size_t len)
+void	ft_bzero(void *s, size_t n)
 {
-	unsigned char	*tmp;
-
-	tmp = (unsigned char *)b;
-	while (len--)
-		*tmp++ = c;
-	return (b);
+	ft_memset(s, 0, n);
 }
 
 /*
 int	main()
 {
-	char b[] = "Esta es la string";
-	int c = 'h';
-	size_t len = 4;
-
-	printf("%s\n", ft_memset(b, c, len));
-	printf("%s\n", memset(b, c, len));
+	printf("%s\n", (unsigned char *)(ft_bzero("Barcelona", 4)));
 	return (0);
 }*/
