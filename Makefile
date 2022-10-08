@@ -6,7 +6,7 @@
 #    By: jumoreno <jumoreno@student.42barcel>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/17 20:35:13 by jumoreno          #+#    #+#              #
-#    Updated: 2022/10/05 17:26:21 by jumoreno         ###   ########.fr        #
+#    Updated: 2022/10/07 19:21:12 by jumoreno         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,17 +14,9 @@ NAME = libft.a
 
 INCLUDE = -I ./
 
-SRCS = ft_isdigit.c\
-	   ft_isalpha.c\
-	   ft_isalnum.c\
-	   ft_isascii.c\
-	   ft_isprint.c\
-	   ft_strchr.c\
-	   ft_strlen.c\
-	   ft_strrchr.c\
-	   ft_tolower.c\
-	   ft_toupper.c
-
+SRCS = ft_isdigit.c ft_isalpha.c ft_isalnum.c ft_isascii.c ft_isprint.c\
+	   ft_strchr.c ft_strlen.c ft_strrchr.c ft_tolower.c ft_toupper.c\
+	   ft_strncmp.c
 
 OBJS = $(SRCS:.c=.o)
 
