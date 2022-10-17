@@ -6,7 +6,7 @@
 /*   By: jumoreno <jumoreno@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/20 19:14:17 by jumoreno          #+#    #+#             */
-/*   Updated: 2022/10/05 20:02:37 by jumoreno         ###   ########.fr       */
+/*   Updated: 2022/10/17 16:50:46 by jumoreno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,25 +19,20 @@ char	*ft_strchr(const char *s, int c)
 	int	i;
 
 	i = 0;
-	while (s[i])
-	{
-		if (s[i] == (char) c)
-			return ((char *)&s[i]);
-		i++;
-	}
-	while (s[i] != (char) c)
-	{
-		return (NULL);
-	}
+	while (*s != '\0' && c != *s)
+		s++;
+	if (c == *s)
+		return ((char*)s);
 	return (NULL);
 }
-/*
+
 int	main(void)
 {
-	char	s[] = "Hello world123";
-	int c = 9849;
+	char	s[] = "Hello \0world1\023\0";
+	char	s2[] = "Hello \0world1\023\0";
+	int c = 'w';
 
 	printf("%s\n", ft_strchr(s, c));
-	printf("%s\n", strchr(s, c));
+	printf("%s\n", strchr(s2, c));
 	return (0);
-}*/
+}
