@@ -6,7 +6,7 @@
 /*   By: jumoreno <jumoreno@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 17:22:53 by jumoreno          #+#    #+#             */
-/*   Updated: 2022/10/17 19:08:47 by jumoreno         ###   ########.fr       */
+/*   Updated: 2022/10/17 20:26:22 by jumoreno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void		ft_bzero(void *s, size_t n);
 void 		*ft_memcpy(void *restrict dst, const void *restrict src, size_t n);
 void        *ft_memmove(void *dst, const void *src, size_t len);
 size_t		ft_strlcpy(char *dst, const char *src, size_t dstsize);
-
+size_t		ft_strlcat(char *dst, const char *src, size_t dstsize);
 int			ft_toupper(int a);
 int			ft_tolower(int a);
 char		*ft_strchr(const char *s, int c);
