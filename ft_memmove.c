@@ -6,7 +6,7 @@
 /*   By: jumoreno <jumoreno@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 19:35:07 by jumoreno          #+#    #+#             */
-/*   Updated: 2022/10/15 19:14:11 by jumoreno         ###   ########.fr       */
+/*   Updated: 2022/10/22 19:20:21 by jumoreno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,13 +38,3 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	return (dst);
 }	
-/*
-int	main()
-{
-	char	src[] = "lorem ipum dolor sit a";
-	char	dst[] = "lorem ipum dolor sit a"; // check if overlap putting less chars than src
-	char	dst2[] = "lorem ipum dolor sit a";
-	printf("%s\n", memmove(dst, src, 8));
-	printf("%s\n", ft_memmove(dst2, src, 8));
-	return (0);
-}*/

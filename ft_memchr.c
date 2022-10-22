@@ -1,33 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   strlen.c                                           :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jumoreno <jumoreno@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/17 19:29:37 by jumoreno          #+#    #+#             */
-/*   Updated: 2022/10/22 18:27:34 by jumoreno         ###   ########.fr       */
+/*   Created: 2022/10/22 16:57:18 by jumoreno          #+#    #+#             */
+/*   Updated: 2022/10/22 20:22:26 by jumoreno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdio.h>
-#include<string.h>
+#include "libft.h"
 
-size_t	ft_strlen(const char *s)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
 	size_t	i;
 
 	i = 0;
-	while (s[i] != '\0')
+	while (i < n)
 	{
+		if (((unsigned char)c == ((unsigned char *)s)[i]))
+			return (((unsigned char *)s) + i);
 		i++;
 	}
-	return (i);
+	return (NULL);
 }
-/*
-int	main(void)
-{
-	const char s[] = "Hola mundo!11";
-	printf("%zu\n", ft_strlen(s));
-	printf("%lu\n", strlen(s));
-}*/

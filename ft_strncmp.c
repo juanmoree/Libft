@@ -6,12 +6,11 @@
 /*   By: jumoreno <jumoreno@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 20:08:19 by jumoreno          #+#    #+#             */
-/*   Updated: 2022/10/07 19:16:24 by jumoreno         ###   ########.fr       */
+/*   Updated: 2022/10/22 19:22:35 by jumoreno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include<string.h>
+#include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
@@ -29,14 +28,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return ((unsigned char)(s1[i]) - (unsigned char)(s2[i]));
 }
-/*
-int	main(void)
-{
-	char s1[] = "estoooo to es un";
-	char s2[] = "est";
-	size_t n = 7;
-
-	printf("%d\n", ft_strncmp(s1, s2, n));
-	printf("%d\n", strncmp(s1, s2, n)); // arroja el resultado de el caracter de s1 menos el caracter de s2 cuando encuentra una diferencia (ASCII)
-	return (0);
-}*/
