@@ -6,7 +6,7 @@
 /*   By: jumoreno <jumoreno@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 17:22:53 by jumoreno          #+#    #+#             */
-/*   Updated: 2022/10/22 19:23:20 by jumoreno         ###   ########.fr       */
+/*   Updated: 2022/10/22 21:37:14 by jumoreno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,5 +35,6 @@ char		*ft_strchr(const char *s, int c);
 char		*ft_strrchr(const char *s, int c);
 int			ft_strncmp(const char *s1, const char *s2, size_t n);
 void		*ft_memchr(const void *s, int c, size_t n);
+int			ft_memcmp(const void *s1, const void *s2, size_t n);
 
 #endif	
