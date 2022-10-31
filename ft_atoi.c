@@ -6,12 +6,11 @@
 /*   By: jumoreno <jumoreno@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 20:20:10 by jumoreno          #+#    #+#             */
-/*   Updated: 2022/10/31 21:34:04 by jumoreno         ###   ########.fr       */
+/*   Updated: 2022/10/31 21:36:24 by jumoreno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 int	ft_atoi(const char *str)
 {
