@@ -6,7 +6,7 @@
 /*   By: jumoreno <jumoreno@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/17 19:29:37 by jumoreno          #+#    #+#             */
-/*   Updated: 2022/10/22 18:27:34 by jumoreno         ###   ########.fr       */
+/*   Updated: 2022/11/02 19:51:09 by jumoreno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,10 +24,3 @@ size_t	ft_strlen(const char *s)
 	}
 	return (i);
 }
-/*
-int	main(void)
-{
-	const char s[] = "Hola mundo!11";
-	printf("%zu\n", ft_strlen(s));
-	printf("%lu\n", strlen(s));
-}*/
