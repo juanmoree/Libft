@@ -1,36 +1,47 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jumoreno <jumoreno@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/02 17:17:06 by jumoreno          #+#    #+#             */
-/*   Updated: 2022/11/02 22:23:40 by jumoreno         ###   ########.fr       */
+/*   Created: 2022/11/02 22:22:26 by jumoreno          #+#    #+#             */
+/*   Updated: 2022/11/03 21:47:05 by jumoreno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_substr(char const *s, unsigned int start, size_t len)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	size_t	len_s;
 	size_t	i;
-	char	*str;
+	size_t	j;
+	char	*aux;
 
+	j = 0;
 	i = 0;
-	if (!s)
+	aux = (char *)malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
+	if (!aux)
 		return (0);
-	len_s = ft_strlen(s);
-	if (start >= len_s)
-		return (ft_strdup(""));
-	if (start + len == len_s + 1 || len > len_s)
-		len = len_s - start;
-	str = (char *)malloc(len +1);
-	if (!str)
-		return (NULL);
-	while (i++ < start)
-		s++;
-	ft_strlcpy(str, s, len + 1);
-	return (str);
+	if (!s1)
+		ft_strdup("\0");
+	else
+	{
+		while (s1[i] != '\0')
+			aux[j++] = s1[i++];
+	}
+	i = 0;
+	while (s2[i] != '\0')
+		aux[j++] = s2[i++];
+	aux[j] = ('\0');
+	return (aux);
 }
+/*
+int	main()
+{
+	char s1[] = "Esta es";
+	char s2[] = "La cadena";
+	printf("%s\n", ft_strjoin(s1, s2));
+	return (0);
+}
+*/
