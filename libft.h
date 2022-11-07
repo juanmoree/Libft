@@ -6,7 +6,7 @@
 /*   By: jumoreno <jumoreno@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 17:22:53 by jumoreno          #+#    #+#             */
-/*   Updated: 2022/11/06 17:02:27 by jumoreno         ###   ########.fr       */
+/*   Updated: 2022/11/07 14:52:02 by jumoreno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,5 +49,6 @@ char		*ft_strtrim(char const *s1, char const *set);
 
 void		ft_putchar_fd(char c, int fd);
 void		ft_putstr_fd(char *s, int fd);
-
+void		ft_putendl_fd(char *s, int fd);
+void		ft_putnbr_fd(int n, int fd);
 #endif	
