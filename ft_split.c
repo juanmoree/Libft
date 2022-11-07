@@ -1,19 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jumoreno <jumoreno@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/07 14:14:50 by jumoreno          #+#    #+#             */
-/*   Updated: 2022/11/07 18:32:32 by jumoreno         ###   ########.fr       */
+/*   Created: 2022/11/07 20:05:14 by jumoreno          #+#    #+#             */
+/*   Updated: 2022/11/07 20:46:56 by jumoreno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-void	ft_putendl_fd(char *s, int fd)
+char	**ft_split(char const *s, char c)
 {
-	ft_putstr_fd(s, fd);
-	ft_putchar_fd('\n', fd);
-}
+	int	i;
+	int	len_s;
+	
+	len_s = ft_strlen(s);
+	while (*s != NULL)
+	{
+		if (*s == c)
+			*s = 
+
+
+

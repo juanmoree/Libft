@@ -6,7 +6,7 @@
 /*   By: jumoreno <jumoreno@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 21:48:14 by jumoreno          #+#    #+#             */
-/*   Updated: 2022/11/07 15:46:34 by jumoreno         ###   ########.fr       */
+
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,22 +14,21 @@
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	size_t	i;
+	size_t	rev;
 
-	if (!s1 || !set)
-		return (0);
 	while (*s1 && ft_strchr(set, *s1))
 		s1++;
-	i = ft_strlen(s1);
-	while (i && ft_strchr(set, s1[i]))
-		i--;
-	return (ft_substr(s1, 0, i + 1));
+	rev = ft_strlen(s1);
+	while (ft_strrchr(set, s1[rev]) && rev)
+		rev--;
+	return (ft_substr(s1, 0, rev + 1));
 }
 
+/*
 int	main()
 {
 	char s1[] = "murcielago murcielago murcielago";
 	char set[] = "aeiou";
 	printf("%s\n", ft_strtrim(s1, set));
 	return (0);
-}
+}*/
