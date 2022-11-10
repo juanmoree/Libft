@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jumoreno <jumoreno@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/03 21:48:14 by jumoreno          #+#    #+#             */
-
+/*   Created: 2022/11/10 19:16:34 by jumoreno          #+#    #+#             */
+/*   Updated: 2022/11/10 19:16:37 by jumoreno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 		rev--;
 	return (ft_substr(s1, 0, rev + 1));
 }
-
 /*
 int	main()
 {

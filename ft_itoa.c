@@ -6,13 +6,13 @@
 /*   By: jumoreno <jumoreno@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 18:54:37 by jumoreno          #+#    #+#             */
-/*   Updated: 2022/11/07 19:22:36 by jumoreno         ###   ########.fr       */
+/*   Updated: 2022/11/10 19:15:07 by jumoreno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	ft_absolut(int	n)
+static int	ft_absolut(int n)
 {
 	if (n < 0)
 		n = -n;
@@ -21,7 +21,7 @@ static int	ft_absolut(int	n)
 
 static int	ft_nbrlen(int n)
 {
-	int size;
+	int	size;
 
 	size = 0;
 	if (n == 0)
