@@ -6,13 +6,14 @@
 /*   By: jumoreno <jumoreno@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 18:54:37 by jumoreno          #+#    #+#             */
-/*   Updated: 2022/11/10 19:15:07 by jumoreno         ###   ########.fr       */
+/*   Updated: 2022/11/11 14:36:38 by jumoreno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 static int	ft_absolut(int n)
+	// convierte el ultimo(primer) numero en + si es -
 {
 	if (n < 0)
 		n = -n;
@@ -20,6 +21,7 @@ static int	ft_absolut(int n)
 }
 
 static int	ft_nbrlen(int n)
+	// Nos dice de que tamano es el numero(cuantos digitos)
 {
 	int	size;
 
